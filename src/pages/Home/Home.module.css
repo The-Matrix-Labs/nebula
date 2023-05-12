@@ -1,0 +1,124 @@
+.home {
+  background-image: url("../../assets/images/home-wallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 12.5rem 0px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 7.5rem;
+  white-space: pre-line;
+}
+
+.first {
+  padding-top: 2.5%;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.grad {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 76px;
+  /* or 119% */
+
+  text-transform: uppercase;
+
+  background: linear-gradient(
+    89.95deg,
+    #ffc700 0.07%,
+    #ff7a00 24.98%,
+    #ff2e00 47.05%,
+    #fe007a 68.11%,
+    #bd00ff 96.53%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.second {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 76px;
+  /* or 119% */
+
+  text-transform: uppercase;
+  color: white;
+}
+
+.third {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+
+  color: #ffffff;
+}
+
+.btn1 {
+  background: linear-gradient(
+    89.95deg,
+    #ffc700 0.07%,
+    #ff7a00 24.98%,
+    #ff2e00 47.05%,
+    #fe007a 68.11%,
+    #bd00ff 96.53%
+  );
+  border-radius: 10px;
+  padding: 0.5% 2.5%;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.btn2 {
+  border: 2px;
+  border-color: linear-gradient(
+    89.95deg,
+    #ffc700 0.07%,
+    #ff7a00 24.98%,
+    #ff2e00 47.05%,
+    #fe007a 68.11%,
+    #bd00ff 96.53%
+  );
+  border-radius: 10px;
+  padding: 0.5% 2.5%;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  margin-left: 1%;
+  background: linear-gradient(
+    90.32deg,
+    #020202 0.37%,
+    rgba(2, 2, 2, 0.31) 99.82%
+  );
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.coins {
+  background-image: url("../../assets/images/coin-wallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 12.5rem 0px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 10%;
+  white-space: pre-line;
+}
