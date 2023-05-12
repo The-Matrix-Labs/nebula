@@ -122,3 +122,119 @@
   padding: 10%;
   white-space: pre-line;
 }
+
+.about {
+  background-image: url("../../assets/images/about-wallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 12.5rem 0px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 10%;
+  white-space: pre-line;
+}
+
+.aboutHead {
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 76px;
+/* or 190% */
+color: #FFFFFF;
+}
+
+.aboutLine {
+  margin-right: 1%;
+}
+
+.aboutInfo {
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+margin-left: 1.5%;
+width: 60%;
+color: #FFFFFF;
+}
+
+.readMore {
+  margin-left: 1.5%;
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+
+color: #FFFFFF;
+background-color: transparent;
+border: none;
+padding: 0;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+}
+.howHead {
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 76px;
+/* or 190% */
+color: #FFFFFF;
+align-self: center;
+margin-left: 2%;
+}
+.howRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+}
+.howbtn2 {
+  border: 2px;
+  border-color: linear-gradient(
+    89.95deg,
+    #ffc700 0.07%,
+    #ff7a00 24.98%,
+    #ff2e00 47.05%,
+    #fe007a 68.11%,
+    #bd00ff 96.53%
+  );
+  border-radius: 27px;
+  padding: 0.5% 2.5%;
+  background-color: transparent;
+  box-sizing: border-box;
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+
+color: #FFFFFF;
+
+background: rgba(255, 255, 255, 0.11);
+align-content: center;
+  
+}
+
+.howreadMore {
+  margin-left: 1.5%;
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+
+color: #FFFFFF;
+background-color: transparent;
+border: none;
+padding: 0;
+align-content: flex-end;
+margin-right: 5%;
+}
