@@ -238,3 +238,59 @@ padding: 0;
 align-content: flex-end;
 margin-right: 5%;
 }
+
+.token {
+  background-image: url("../../assets/images/token-wallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 12.5rem 0px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  white-space: pre-line;
+}
+
+.nftTitle {
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 76px;
+/* or 190% */
+text-align: center;
+max-height: 40vh;
+color: #FFFFFF;
+}
+
+.hlineImage {
+ position: relative;
+ padding-bottom: 20%;
+ 
+}
+
+.nftProfiles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.nftfooter{
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 76px;
+/* identical to box height, or 238% */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.teamProfiles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
