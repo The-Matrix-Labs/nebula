@@ -22,8 +22,8 @@ const Navbar = ({home, about, token, road, team, partners}) => {
       <li onClick={() => {scrollToSection(home.current);}}>Home</li>
       <li onClick={() => {scrollToSection(about.current);}}>About Us</li>
       <li onClick={() => {scrollToSection(token.current);}}>Tokenomics</li>
-      <li onClick={() => {scrollToSection(road.current);}}>Roadmaps</li>
-      <li onClick={() => {scrollToSection(team.current);}}>Teams</li>
+      <li onClick={() => {scrollToSection(road.current);}}>Roadmap</li>
+      <li onClick={() => {scrollToSection(team.current);}}>Team</li>
       <li onClick={() => {scrollToSection(partners.current);}}>Partners</li>
       <li onClick={(e) => {
       e.preventDefault();

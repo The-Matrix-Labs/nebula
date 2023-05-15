@@ -8,11 +8,11 @@ const NSH = () => (
         <div className={styles.row}>
         <div className={styles.left}>
         <p className={styles.labelTitle}>1.5B Preminted (15%)
-        {'\n'}<span className={styles.orange}/>5% Private Sale (375M) Set Price
-        {'\n'}<span className={styles.yellow}/>32% Public Sale(480M) Fair Launch
-        {'\n'}<span className={styles.red}/>20% Protocl Stability(300M)*
-        {'\n'}<span className={styles.pink}/> 12% Dex/Cex/Marketing (180M)
-        {'\n'}<span className={styles.purple}/>11% Liquidity (165M)
+        {'\n'}{'\n'}<span className={styles.orange}/>5% Private Sale (375M) Set Price
+        {'\n'}{'\n'}<span className={styles.yellow}/>32% Public Sale(480M) Fair Launch
+        {'\n'}{'\n'}<span className={styles.red}/>20% Protocl Stability(300M)*
+        {'\n'}{'\n'}<span className={styles.pink}/> 12% Dex/Cex/Marketing (180M)
+        {'\n'}{'\n'}<span className={styles.purple}/>11% Liquidity (165M)
         </p>
         <p className={styles.labelTitle}>1.6% Team  (160M, zero up front, paid per block)
 0.8% Marketing(80M, zero up front, paid per block) 

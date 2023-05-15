@@ -134,7 +134,7 @@ And much much more....        </p>
           </div>
         </div>
       </section>
-      <section ref={token} className={styles.token}>
+      <section  className={styles.token}>
         <div className={styles.nftTitle}>
           <p>
             NFT collection - Nebluoids {"\n"}
@@ -147,7 +147,7 @@ And much much more....        </p>
           <NFTProfile src={NFT3}/>
         </div>
         <div className={styles.nftfooter}>Minting coming soon</div>
-        <div className={styles.nftTitle}>
+        <div ref={token} className={styles.nftTitle}>
           <p>
             Tokenomics {"\n"}
             <img className={styles.hlineImage} src={hline} />
