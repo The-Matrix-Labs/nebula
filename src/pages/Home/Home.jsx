@@ -18,6 +18,7 @@ import Team3 from '../../assets/images/Team3.png'
 import partner1 from '../../assets/images/partner1.png'
 import partner2 from '../../assets/images/partner2.png'
 import Timeline from "../../components/Roadmap/Roadmap";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -135,6 +136,7 @@ const Home = () => {
           <img src={partner2} alt="" />
         </div>
       </section>
+      <Footer/>
     </>
   );
 };
