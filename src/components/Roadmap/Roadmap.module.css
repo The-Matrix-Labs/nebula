@@ -1,0 +1,117 @@
+.timelinecontainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 40px 0;
+}
+
+.timelinecontainer::after {
+    content:"";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 2px dashed rgba(255, 255, 255, 0.31);
+}
+
+.timelineitem {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    position: relative;
+    margin: 0px 0;
+    width: 50%;
+}
+
+.timelineitem:nth-child(odd) {
+    align-self: flex-end;
+    justify-content: flex-start;
+    padding-left: 50px;
+    padding-right: 0;
+}
+.timelineitemcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 35px;
+    position: relative;
+    width: 400px;
+    max-width: 70%;
+    text-align: left;
+}
+.list {
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+
+letter-spacing: 0.04em;
+
+color: rgba(255, 255, 255, 0.57);
+}
+.title {
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+width:max-content;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+}
+
+
+
+.timelineitem:nth-child(odd) .timelineitemcontent {
+    text-align: left;
+    align-items: flex-start;
+}
+
+.timelineitem:nth-child(odd) .timelineitemcontent::after {
+    right: auto;
+    left: -7.5px;
+    
+}
+
+
+
+
+
+
+
+
+.timelineitemcontent .circle {
+    background: linear-gradient(89.95deg, #FFC700 0.07%, #FF7A00 24.98%, #FF2E00 47.05%, #FE007A 68.11%, #BD00FF 96.53%);
+    border-radius: 50%;
+    position: absolute;    
+    width: 51px;
+    height: 51px;
+    z-index: 100;
+    right: -25.5px;
+}
+.timelineitem:nth-child(odd) .timelineitemcontent .circle {
+    right: auto;
+    left: -25.5px;
+}
+
+
+@media only screen and (max-width: 1023px) {
+    .timeline-item-content {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .timeline-item-content,
+    .timeline-item:nth-child(odd) .timeline-item-content {
+        padding: 15px 10px;
+        text-align: center;
+        align-items: center;
+    }
+
+    
+}

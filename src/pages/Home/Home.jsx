@@ -17,6 +17,7 @@ import Team2 from '../../assets/images/Team2.png'
 import Team3 from '../../assets/images/Team3.png'
 import partner1 from '../../assets/images/partner1.png'
 import partner2 from '../../assets/images/partner2.png'
+import Timeline from "../../components/Roadmap/Roadmap";
 
 const Home = () => {
   return (
@@ -111,6 +112,7 @@ const Home = () => {
             <img className={styles.hlineImage} src={hline} />
           </p>
         </div>
+        <Timeline/>
         <div className={styles.nftTitle}>
           <p>
             Team {"\n"}
