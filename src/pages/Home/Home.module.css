@@ -83,11 +83,11 @@
   cursor: pointer;
   color: #ffffff;
 }
-.btn1:hover{
+.btn1:hover {
   color: rgba(255, 255, 255, 0.57);
   transition: 0.2s;
 }
-.btn2:hover{
+.btn2:hover {
   color: rgba(255, 255, 255, 0.57);
   transition: 0.2s;
 }
@@ -113,10 +113,9 @@
     90.32deg,
     #020202 0.37%,
     rgba(2, 2, 2, 0.31) 99.82%
-    
   );
   /* identical to box height */
-cursor: pointer;
+  cursor: pointer;
   color: #ffffff;
 }
 
@@ -130,7 +129,6 @@ cursor: pointer;
   margin: auto;
   padding: 10%;
   white-space: pre-line;
-  
 }
 
 .about {
@@ -146,13 +144,13 @@ cursor: pointer;
 }
 
 .aboutHead {
-  font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 76px;
-/* or 190% */
-color: #FFFFFF;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 76px;
+  /* or 190% */
+  color: #ffffff;
 }
 
 .aboutLine {
@@ -160,32 +158,32 @@ color: #FFFFFF;
 }
 
 .aboutInfo {
-  font-family: 'Nunito';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 27px;
-margin-left: 1.5%;
-width: 60%;
-text-align: justify;
-color: #FFFFFF;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  margin-left: 1.5%;
+  width: 60%;
+  text-align: justify;
+  color: #ffffff;
 }
 
 .readMore {
   margin-left: 1.5%;
-  font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 33px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
 
-color: #FFFFFF;
-background-color: transparent;
-border: none;
-padding: 0;
-cursor: pointer;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
-.readMore:hover{
+.readMore:hover {
   color: rgba(255, 255, 255, 0.57);
   transition: 0.2s;
 }
@@ -193,18 +191,17 @@ cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  
 }
 .howHead {
-  font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 76px;
-/* or 190% */
-color: #FFFFFF;
-align-self: center;
-margin-left: 2%;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 76px;
+  /* or 190% */
+  color: #ffffff;
+  align-self: center;
+  margin-left: 2%;
 }
 .howRow {
   display: flex;
@@ -212,7 +209,7 @@ margin-left: 2%;
   justify-content: space-between;
   width: 60%;
 }
-.howbtn2:hover{
+.howbtn2:hover {
   color: rgba(255, 255, 255, 0.57);
   transition: 0.2s;
 }
@@ -231,37 +228,36 @@ margin-left: 2%;
   padding: 0.5% 2.5%;
   background-color: transparent;
   box-sizing: border-box;
-  font-family: 'Nunito';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 27px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
 
-color: #FFFFFF;
+  color: #ffffff;
 
-background: rgba(255, 255, 255, 0.11);
-align-content: center;
-  
+  background: rgba(255, 255, 255, 0.11);
+  align-content: center;
 }
-.howreadMore:hover{
+.howreadMore:hover {
   color: rgba(255, 255, 255, 0.57);
   transition: 0.2s;
 }
 .howreadMore {
   cursor: pointer;
   margin-left: 1.5%;
-  font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 33px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
 
-color: #FFFFFF;
-background-color: transparent;
-border: none;
-padding: 0;
-align-content: flex-end;
-margin-right: 5%;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  align-content: flex-end;
+  margin-right: 5%;
 }
 
 .token {
@@ -276,21 +272,20 @@ margin-right: 5%;
 }
 
 .nftTitle {
-  font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 76px;
-/* or 190% */
-text-align: center;
-max-height: 40vh;
-color: #FFFFFF;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 76px;
+  /* or 190% */
+  text-align: center;
+  max-height: 40vh;
+  color: #ffffff;
 }
 
 .hlineImage {
- position: relative;
- padding-bottom: 20%;
- 
+  position: relative;
+  padding-bottom: 20%;
 }
 
 .nftProfiles {
@@ -300,17 +295,17 @@ color: #FFFFFF;
   justify-content: center;
 }
 
-.nftfooter{
-  font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 76px;
-/* identical to box height, or 238% */
+.nftfooter {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 76px;
+  /* identical to box height, or 238% */
 
-text-align: center;
+  text-align: center;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
 
 .teamProfiles {
@@ -321,29 +316,28 @@ color: #FFFFFF;
 }
 
 .modal {
-
-width: 645px;
-height: 442px;
-position: relative;
+  width: 645px;
+  height: 442px;
+  position: relative;
   top: 50%;
   transform: translateY(-50%);
-margin: auto;
+  margin: auto;
 
-background: #FFC700;
-backdrop-filter: blur(10px);
-/* Note: backdrop-filter has minimal browser support */
+  background: #ffc700;
+  backdrop-filter: blur(10px);
+  /* Note: backdrop-filter has minimal browser support */
 
-border-radius: 22px;
-font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 64px;
-line-height: 76px;
-/* or 119% */
-justify-content: center;
-text-align: center;
-text-transform: uppercase;
-display: flex;
-align-items: center;
-color: #020202;
+  border-radius: 22px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 76px;
+  /* or 119% */
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  color: #020202;
 }

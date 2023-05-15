@@ -1,5 +1,5 @@
 .container {
-    width: 80%;
+  width: 80%;
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.24) 0%,
@@ -17,76 +17,71 @@
   font-weight: 900;
   font-size: 32px;
   line-height: 44px;
-    margin-left: 7.5%;
+  margin-left: 7.5%;
   color: #ffffff;
 }
 
 .labelTitle {
-    font-family: 'Nunito';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 33px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
 
-color: #FFFFFF;
-
+  color: #ffffff;
 }
 
 .row {
-    margin-left: 7.5%;
-    margin-right: 7.5;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  margin-left: 7.5%;
+  margin-right: 7.5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .right {
-    display: flex;
-    align-items: flex-end;
-        padding-right: 2%;
-    padding-bottom: 3%;
-  }
-  .left{
-    align-items: flex-start;
-    flex-direction: column;
-    
-  }
-  .orange{
-    background: #FF7A00;
-border-radius: 2px;
-height: 5vh;
-width: 5vh;
-float: left;
+  display: flex;
+  align-items: flex-end;
+  padding-right: 2%;
+  padding-bottom: 3%;
+}
+.left {
+  align-items: flex-start;
+  flex-direction: column;
+}
+.orange {
+  background: #ff7a00;
+  border-radius: 2px;
+  height: 5vh;
+  width: 5vh;
+  float: left;
 
-vertical-align: middle;
-  }
-  .yellow{
-    background: #FFC700;
-border-radius: 2px;
-height: 5vh;
-width: 5vh;
-float: left;
-  }
-  .red{
-    background: #FF2E00;
-border-radius: 2px;
-height: 5vh;
-width: 5vh;
-float: left;
-
-  }
-  .pink{
-    background: #FE007A;
-border-radius: 2px;
-height: 5vh;
-width: 5vh;
-float: left;
-
-  }
-  .purple{
-    background: #BD00FF;
-border-radius: 2px;
-height: 5vh;
-width: 5vh;
-float: left;
-
-  }
+  vertical-align: middle;
+}
+.yellow {
+  background: #ffc700;
+  border-radius: 2px;
+  height: 5vh;
+  width: 5vh;
+  float: left;
+}
+.red {
+  background: #ff2e00;
+  border-radius: 2px;
+  height: 5vh;
+  width: 5vh;
+  float: left;
+}
+.pink {
+  background: #fe007a;
+  border-radius: 2px;
+  height: 5vh;
+  width: 5vh;
+  float: left;
+}
+.purple {
+  background: #bd00ff;
+  border-radius: 2px;
+  height: 5vh;
+  width: 5vh;
+  float: left;
+}

@@ -1,29 +1,45 @@
-import React from 'react';
-import styles from './NSH.module.css';
-import pie1 from '../../assets/images/pie1.png'
+import React from "react";
+import styles from "./NSH.module.css";
+import pie1 from "../../assets/images/pie1.png";
 
 const NSH = () => (
-    <div className={styles.container}>
-        <p className={styles.title}>NSH -10 Billion</p>
-        <div className={styles.row}>
-        <div className={styles.left}>
-        <p className={styles.labelTitle}>1.5B Preminted (15%)
-        {'\n'}{'\n'}<span className={styles.orange}/>5% Private Sale (375M) Set Price
-        {'\n'}{'\n'}<span className={styles.yellow}/>32% Public Sale(480M) Fair Launch
-        {'\n'}{'\n'}<span className={styles.red}/>20% Protocl Stability(300M)*
-        {'\n'}{'\n'}<span className={styles.pink}/> 12% Dex/Cex/Marketing (180M)
-        {'\n'}{'\n'}<span className={styles.purple}/>11% Liquidity (165M)
+  <div className={styles.container}>
+    <p className={styles.title}>NSH -10 Billion</p>
+    <div className={styles.row}>
+      <div className={styles.left}>
+        <p className={styles.labelTitle}>
+          1.5B Preminted (15%)
+          {"\n"}
+          {"\n"}
+          <span className={styles.orange} />
+          5% Private Sale (375M) Set Price
+          {"\n"}
+          {"\n"}
+          <span className={styles.yellow} />
+          32% Public Sale(480M) Fair Launch
+          {"\n"}
+          {"\n"}
+          <span className={styles.red} />
+          20% Protocl Stability(300M)*
+          {"\n"}
+          {"\n"}
+          <span className={styles.pink} /> 12% Dex/Cex/Marketing (180M)
+          {"\n"}
+          {"\n"}
+          <span className={styles.purple} />
+          11% Liquidity (165M)
         </p>
-        <p className={styles.labelTitle}>1.6% Team  (160M, zero up front, paid per block)
-0.8% Marketing(80M, zero up front, paid per block) 
-8.5B Minted by Farming/Dex/Rebates
-NUSD-TBD by Minting</p>
-</div>
-<div className={styles.right}>
-    <img src={pie1} alt="" />
-</div>
-        </div>
+        <p className={styles.labelTitle}>
+          1.6% Team (160M, zero up front, paid per block) 0.8% Marketing(80M,
+          zero up front, paid per block) 8.5B Minted by Farming/Dex/Rebates
+          NUSD-TBD by Minting
+        </p>
+      </div>
+      <div className={styles.right}>
+        <img src={pie1} alt="" />
+      </div>
     </div>
-  );
-  
-  export default NSH;
+  </div>
+);
+
+export default NSH;

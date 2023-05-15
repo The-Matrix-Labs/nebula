@@ -1,30 +1,29 @@
 import React, { useRef, useState } from "react";
 import Modal from "react-modal";
-import ReactPlayer from 'react-player'
+import ReactPlayer from "react-player";
 import Navbar from "../../components/Navbar/Navbar";
 import styles from "./Home.module.css";
 import coin from "../../assets/images/coin.png";
 import line from "../../assets/images/line.png";
 import hline from "../../assets/images/hline.png";
-import NFTProfile from '../../components/NFTProfile/NFTProfile'
-import NFT1 from '../../assets/images/NFT1.png'
-import NFT2 from '../../assets/images/NFT2.png'
-import NFT3 from '../../assets/images/NFT3.png'
-import NSH from '../../components/NSH/NSH'
+import NFTProfile from "../../components/NFTProfile/NFTProfile";
+import NFT1 from "../../assets/images/NFT1.png";
+import NFT2 from "../../assets/images/NFT2.png";
+import NFT3 from "../../assets/images/NFT3.png";
+import NSH from "../../components/NSH/NSH";
 import Distribution from "../../components/Distribution/Distribution";
 import NFTInfo from "../../components/NFTInfo/NFTInfo";
 import TeamProfile from "../../components/TeamProfile/TeamProfile";
-import Team1 from '../../assets/images/Team1.png'
-import Team2 from '../../assets/images/Team2.png'
-import Team3 from '../../assets/images/Team3.png'
-import partner1 from '../../assets/images/partner1.png'
-import partner2 from '../../assets/images/partner2.png'
+import Team1 from "../../assets/images/Team1.png";
+import Team2 from "../../assets/images/Team2.png";
+import Team3 from "../../assets/images/Team3.png";
+import partner1 from "../../assets/images/partner1.png";
+import partner2 from "../../assets/images/partner2.png";
 import Timeline from "../../components/Roadmap/Roadmap";
 import Footer from "../../components/Footer/Footer";
-import video from '../../assets/video/nebula.mp4'
+import video from "../../assets/video/nebula.mp4";
 
-
-const Home = ({home, about, token, road, team, partners}) => {
+const Home = ({ home, about, token, road, team, partners }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [isShowMore1, setIsShowMore1] = useState(false);
   const [isShowMore2, setIsShowMore2] = useState(false);
@@ -36,7 +35,14 @@ const Home = ({home, about, token, road, team, partners}) => {
   };
   return (
     <>
-      <Navbar home={home} about={about} token={token} road={road} team={team} partners={partners} />
+      <Navbar
+        home={home}
+        about={about}
+        token={token}
+        road={road}
+        team={team}
+        partners={partners}
+      />
       <section className={styles.home}>
         <div ref={home} className={styles.first}>
           <p>
@@ -52,20 +58,33 @@ const Home = ({home, about, token, road, team, partners}) => {
           </p>
         </div>
         <div className={styles.button}>
-          <button onClick={(e) => {
-      e.preventDefault();
-      window.location.href='https://moonvector.io/private/nebula-finance';
-      }} className={styles.btn1}>Private Sale</button>
-          <button onClick={setModalOpen} className={styles.btn2}>Public Sale</button>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              window.open(
+                "https://moonvector.io/private/nebula-finance",
+                "_blank",
+                "noopener,noreferrer"
+              );
+            }}
+            className={styles.btn1}
+          >
+            Private Sale
+          </button>
+          <button onClick={setModalOpen} className={styles.btn2}>
+            Public Sale
+          </button>
           <Modal
-          className={styles.modal}
-        isOpen={modalOpen}
-        onRequestClose={() => setModalOpen(false)}
-      >PUBLIC SALE COMING SOON</Modal>
+            className={styles.modal}
+            isOpen={modalOpen}
+            onRequestClose={() => setModalOpen(false)}
+          >
+            PUBLIC SALE COMING SOON
+          </Modal>
         </div>
       </section>
       <section className={styles.coins}>
-      <ReactPlayer width="100%" height="100%" url={video} controls={true} />
+        <ReactPlayer width="100%" height="100%" url={video} controls={true} />
       </section>
       <section ref={about} className={styles.about}>
         <div className={styles.left}>
@@ -83,11 +102,22 @@ const Home = ({home, about, token, road, team, partners}) => {
             user engagement.
           </p>
           {isShowMore1 && (
-        <p className={styles.aboutInfo}>
-        In our quest for a collateralization ratio between 110% and 150%, the Nebula Cash Protocol is set to transition from an algorithmic stablecoin to a hybrid model. Harnessing fees, taxes, and seigniorage rewards, our system builds collateral and encourages user participation through staking, rewards, and bond issuance mechanisms. Our inventive approach offers a robust and adaptive stablecoin solution, promoting long-term stability and widespread adoption in the crypto ecosystem. Get ready to experience a revolutionary stablecoin solution that achieves the vision it set out to become!
-        </p>
-      )}
-          <button onClick={toggleReadMoreLess1} className={styles.readMore}>{isShowMore1 ? "Read Less" : "Read More"}</button>
+            <p className={styles.aboutInfo}>
+              In our quest for a collateralization ratio between 110% and 150%,
+              the Nebula Cash Protocol is set to transition from an algorithmic
+              stablecoin to a hybrid model. Harnessing fees, taxes, and
+              seigniorage rewards, our system builds collateral and encourages
+              user participation through staking, rewards, and bond issuance
+              mechanisms. Our inventive approach offers a robust and adaptive
+              stablecoin solution, promoting long-term stability and widespread
+              adoption in the crypto ecosystem. Get ready to experience a
+              revolutionary stablecoin solution that achieves the vision it set
+              out to become!
+            </p>
+          )}
+          <button onClick={toggleReadMoreLess1} className={styles.readMore}>
+            {isShowMore1 ? "Read Less" : "Read More"}
+          </button>
         </div>
         <div className={styles.right}>
           <p className={styles.howHead}>
@@ -106,35 +136,37 @@ const Home = ({home, about, token, road, team, partners}) => {
             only to fall apart when greed kicks in.
           </p>
           {isShowMore2 && (
-        <p className={styles.aboutInfo}>
-        Where we differ is by introducing an ecosystem of taxes and rebates, along with a slew of dynamic actionable phases, featuring variable rewards and fee distribution, that lay out a full roadmap to over-collateralization. 
-
-What's our game plan?
-
-Bonds
-Seigniorage Rewards
-Dynamic Reward Distribution
-Dual Asset Staking 
-Minting and Burning 
-Stability Pool
-DEX
-Weighted Epoch Locks
-Increased Stable Lock Ratio
-Tax Backed Collateral 
-Share Incentivized Tax Rebates 
-6 Action Phase reward Structure 
-Roadmap to Collateralization
-Dex Listing Loans
-
-And much much more....        </p>
-      )}
+            <p className={styles.aboutInfo}>
+              Where we differ is by introducing an ecosystem of taxes and
+              rebates, along with a slew of dynamic actionable phases, featuring
+              variable rewards and fee distribution, that lay out a full roadmap
+              to over-collateralization. What's our game plan? Bonds Seigniorage
+              Rewards Dynamic Reward Distribution Dual Asset Staking Minting and
+              Burning Stability Pool DEX Weighted Epoch Locks Increased Stable
+              Lock Ratio Tax Backed Collateral Share Incentivized Tax Rebates 6
+              Action Phase reward Structure Roadmap to Collateralization Dex
+              Listing Loans And much much more....{" "}
+            </p>
+          )}
           <div className={styles.howRow}>
-            <a style={{textDecoration: 'none'}} href={require("../../assets/file/nebula.pdf")} download="Nebula" className={styles.howbtn2}>Download PDF</a>
-            <button onClick={toggleReadMoreLess2} className={styles.howreadMore}>{isShowMore2 ? "Read Less" : "Read More"}</button>
+            <a
+              style={{ textDecoration: "none" }}
+              href={require("../../assets/file/nebula.pdf")}
+              download="Nebula"
+              className={styles.howbtn2}
+            >
+              Download PDF
+            </a>
+            <button
+              onClick={toggleReadMoreLess2}
+              className={styles.howreadMore}
+            >
+              {isShowMore2 ? "Read Less" : "Read More"}
+            </button>
           </div>
         </div>
       </section>
-      <section  className={styles.token}>
+      <section className={styles.token}>
         <div className={styles.nftTitle}>
           <p>
             NFT collection - Nebluoids {"\n"}
@@ -142,9 +174,9 @@ And much much more....        </p>
           </p>
         </div>
         <div className={styles.nftProfiles}>
-          <NFTProfile src={NFT1}/>
-          <NFTProfile src={NFT2}/>
-          <NFTProfile src={NFT3}/>
+          <NFTProfile src={NFT1} />
+          <NFTProfile src={NFT2} />
+          <NFTProfile src={NFT3} />
         </div>
         <div className={styles.nftfooter}>Minting coming soon</div>
         <div ref={token} className={styles.nftTitle}>
@@ -153,16 +185,16 @@ And much much more....        </p>
             <img className={styles.hlineImage} src={hline} />
           </p>
         </div>
-        <NSH/>
-        <Distribution/>
-        <NFTInfo/>
+        <NSH />
+        <Distribution />
+        <NFTInfo />
         <div ref={road} className={styles.nftTitle}>
           <p>
             Roadmap 2023 {"\n"}
             <img className={styles.hlineImage} src={hline} />
           </p>
         </div>
-        <Timeline/>
+        <Timeline />
         <div ref={team} className={styles.nftTitle}>
           <p>
             Team {"\n"}
@@ -170,9 +202,27 @@ And much much more....        </p>
           </p>
         </div>
         <div className={styles.teamProfiles}>
-        <TeamProfile src={Team1} name={'Nova mind'} info={'CTO and developer with many tokens and complex protocols launches under his belt, he is excited for the new challenge.'}/>
-        <TeamProfile src={Team2} name={'Astro Cowboy'} info={'Professional Degen and hype master ring leader, always pushing for something new and exciting in the space.'}/>
-        <TeamProfile src={Team3} name={' Nebulous One'} info={'An experienced project runner and professional degenerate. Having spent years developing complex DeFi ecosystems, he is excited to take a swing at one of the biggest challenges of all: Algo-stables.'}/>
+          <TeamProfile
+            src={Team1}
+            name={"Nova mind"}
+            info={
+              "CTO and developer with many tokens and complex protocols launches under his belt, he is excited for the new challenge."
+            }
+          />
+          <TeamProfile
+            src={Team2}
+            name={"Astro Cowboy"}
+            info={
+              "Professional Degen and hype master ring leader, always pushing for something new and exciting in the space."
+            }
+          />
+          <TeamProfile
+            src={Team3}
+            name={" Nebulous One"}
+            info={
+              "An experienced project runner and professional degenerate. Having spent years developing complex DeFi ecosystems, he is excited to take a swing at one of the biggest challenges of all: Algo-stables."
+            }
+          />
         </div>
         <div ref={partners} className={styles.nftTitle}>
           <p>
@@ -185,7 +235,14 @@ And much much more....        </p>
           <img src={partner2} alt="" />
         </div>
       </section>
-      <Footer home={home} about={about} token={token} road={road} team={team} partners={partners}/>
+      <Footer
+        home={home}
+        about={about}
+        token={token}
+        road={road}
+        team={team}
+        partners={partners}
+      />
     </>
   );
 };

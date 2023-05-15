@@ -1,27 +1,25 @@
 .btn {
-    cursor: pointer;
-    border: 1px solid #FFFFFF;
-    border-radius: 25.5px;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  border-radius: 25.5px;
   align-self: center;
   margin: 5%;
-  font-family: 'Nunito';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-/* identical to box height */
-
-
-background-color: transparent;
-color: #FFFFFF;
-width: fit-content;
-width: 150px;
-height: 50px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
   /* identical to box height */
 
+  background-color: transparent;
+  color: #ffffff;
+  width: fit-content;
+  width: 150px;
+  height: 50px;
+  /* identical to box height */
 }
 
-.btn:hover{
+.btn:hover {
   color: rgba(255, 255, 255, 0.57);
   transition: 0.2s;
 }

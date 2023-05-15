@@ -1,65 +1,64 @@
 .footer {
-    background: #020202;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 6.125rem;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1.5rem;
-    line-height: 2.063rem;
-    color: var(--text-white);
+  background: #020202;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 6.125rem;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 2.063rem;
+  color: var(--text-white);
+}
+
+.logo {
+  width: 200px;
+  height: 110px;
+  cursor: pointer;
+}
+
+.footer > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.col {
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  align-self: start;
+  cursor: pointer;
+}
+
+.social > li {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.social > li > img {
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+}
+li:hover {
+  color: rgba(255, 255, 255, 0.57);
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    padding: 2rem 4rem;
   }
 
-  .logo{
-    width: 200px;
-height: 110px;
-cursor: pointer;
-  }
-  
-  .footer > ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 0.625rem;
-  }
-  
-  .col {
-    flex-direction: column;
-    text-align: left;
-    align-items: flex-start;
-    align-self: start;
-    cursor: pointer;
-  }
-  
-  .social > li {
-    display: flex;
-    gap: 1.25rem;
-  }
-  
   .social > li > img {
-    width: 1.25rem;
-    height: 1.25rem;
-    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
   }
-  li:hover{
-    color: rgba(255, 255, 255, 0.57);
-  transition: 0.2s;
-  
-  }
-  
-  @media screen and (max-width: 500px) {
-    .footer {
-      padding: 2rem 4rem;
-    }
-  
-    .social > li > img {
-      width: 1.5rem;
-      height: 1.5rem;
-    }
-  }
-  .sections {
-    justify-content: space-around;
-    display: flex;
-    flex-direction: row;
-  }
+}
+.sections {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+}
