@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import styles from './Navbar.module.css';
 import logo from '../../assets/images/logo.png';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -6,24 +6,30 @@ import { RxCross2 } from 'react-icons/rx';
 import { Link, useNavigate } from 'react-router-dom';
 import Tab from '../Tab/Tab';
 
-const Navbar = () => {
+const Navbar = ({home, about, token, road, team, partners}) => {
   const [open, setOpen] = useState(false);
-  const navigate = useNavigate();
-  const handleNavigate = (path) => {
-    navigate(path);
+  
+  const scrollToSection = (ref) => {
+    window.scrollTo({
+      top: ref.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
   };
 
   const navOptions = (
     <>
-      <li>Home</li>
-      <li onClick={() => handleNavigate('/about')}>About Us</li>
-      <li onClick={() => handleNavigate('/token')}>Tokenomics</li>
-      <li onClick={() => handleNavigate('/roadmap')}>Roadmaps</li>
-      <li onClick={() => handleNavigate('/teams')}>Teams</li>
-      <li onClick={() => handleNavigate('/partners')}>Partners</li>
-      <li onClick={()=>handleNavigate('/contact')}> 
-      <Tab label={'Contact Us'} onClick={()=>handleNavigate('/contact')}/>
-        {/* <Select text={'Ethereum'} image={ether} arrowVisible={true} /> */}
+      <li onClick={() => {scrollToSection(home.current);}}>Home</li>
+      <li onClick={() => {scrollToSection(about.current);}}>About Us</li>
+      <li onClick={() => {scrollToSection(token.current);}}>Tokenomics</li>
+      <li onClick={() => {scrollToSection(road.current);}}>Roadmaps</li>
+      <li onClick={() => {scrollToSection(team.current);}}>Teams</li>
+      <li onClick={() => {scrollToSection(partners.current);}}>Partners</li>
+      <li onClick={(e) => {
+      e.preventDefault();
+      window.location.href='mailto:Team@nebulafinance.app ';
+      }}> 
+      <Tab label={'Contact Us'} />
       </li>
     </>
   );
@@ -33,7 +39,7 @@ const Navbar = () => {
       <nav className={styles.navbar}>
         <ul>
           <li>
-            <img src={logo} alt="logo" className={styles.logo} />
+            <img onClick={() => {scrollToSection(home.current);}} src={logo} alt="logo" className={styles.logo} />
           </li>
         </ul>
         <ul>{navOptions}</ul>

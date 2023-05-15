@@ -80,8 +80,16 @@
   font-size: 24px;
   line-height: 33px;
   /* identical to box height */
-
+  cursor: pointer;
   color: #ffffff;
+}
+.btn1:hover{
+  color: rgba(255, 255, 255, 0.57);
+  transition: 0.2s;
+}
+.btn2:hover{
+  color: rgba(255, 255, 255, 0.57);
+  transition: 0.2s;
 }
 .btn2 {
   border: 2px;
@@ -105,9 +113,10 @@
     90.32deg,
     #020202 0.37%,
     rgba(2, 2, 2, 0.31) 99.82%
+    
   );
   /* identical to box height */
-
+cursor: pointer;
   color: #ffffff;
 }
 
@@ -121,6 +130,7 @@
   margin: auto;
   padding: 10%;
   white-space: pre-line;
+  
 }
 
 .about {
@@ -172,6 +182,11 @@ color: #FFFFFF;
 background-color: transparent;
 border: none;
 padding: 0;
+cursor: pointer;
+}
+.readMore:hover{
+  color: rgba(255, 255, 255, 0.57);
+  transition: 0.2s;
 }
 .right {
   display: flex;
@@ -196,7 +211,12 @@ margin-left: 2%;
   justify-content: space-between;
   width: 60%;
 }
+.howbtn2:hover{
+  color: rgba(255, 255, 255, 0.57);
+  transition: 0.2s;
+}
 .howbtn2 {
+  cursor: pointer;
   border: 2px;
   border-color: linear-gradient(
     89.95deg,
@@ -222,8 +242,12 @@ background: rgba(255, 255, 255, 0.11);
 align-content: center;
   
 }
-
+.howreadMore:hover{
+  color: rgba(255, 255, 255, 0.57);
+  transition: 0.2s;
+}
 .howreadMore {
+  cursor: pointer;
   margin-left: 1.5%;
   font-family: 'Nunito';
 font-style: normal;
@@ -293,4 +317,32 @@ color: #FFFFFF;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.modal {
+
+width: 645px;
+height: 442px;
+position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+margin: auto;
+
+background: #FFC700;
+backdrop-filter: blur(10px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 22px;
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 76px;
+/* or 119% */
+justify-content: center;
+text-align: center;
+text-transform: uppercase;
+display: flex;
+align-items: center;
+color: #020202;
 }

@@ -20,3 +20,8 @@ height: 50px;
   /* identical to box height */
 
 }
+
+.btn:hover{
+  color: rgba(255, 255, 255, 0.57);
+  transition: 0.2s;
+}

@@ -7,45 +7,68 @@ import moonvector from "../../assets/images/media/moonvector.png";
 import medium from "../../assets/images/media/meta.png";
 import telegram from "../../assets/images/media/telegram.png";
 
-const Footer = () => {
-  return (
+const Footer = ({home, about, token, road, team, partners}) => {
+    const scrollToSection = (ref) => {
+        window.scrollTo({
+          top: ref.offsetTop,
+          left: 0,
+          behavior: "smooth",
+        });
+      };
+    return (
     <footer className={styles.footer}>
       <ul>
         <li>
-          <img src={logo} alt="logo" className={styles.logo} />
+          <img onClick={() => {scrollToSection(home.current);}} src={logo} alt="logo" className={styles.logo} />
         </li>
       </ul>
       <div className={styles.sections}>
       <ul className={styles.col}>
-        <li style={{ listStyleType: "none" }}>
+        <li onClick={() => {scrollToSection(home.current);}} style={{ listStyleType: "none" }}>
           Home
         </li>
-        <li style={{ listStyleType: "none" }}>
+        <li onClick={() => {scrollToSection(about.current);}} style={{ listStyleType: "none" }}>
           About Us
         </li>
-        <li style={{ listStyleType: "none" }}>
+        <li onClick={() => {scrollToSection(token.current);}} style={{ listStyleType: "none" }}>
           Tokenomics
         </li>
       </ul>
       <ul className={styles.col}>
-        <li style={{ listStyleType: "none" }}>
+        <li onClick={() => {scrollToSection(road.current);}} style={{ listStyleType: "none" }}>
           Roadmaps
         </li>
-        <li style={{ listStyleType: "none" }}>
+        <li style={{ listStyleType: "none" }} onClick={() => {scrollToSection(team.current);}}>
           Team
         </li>
-        <li style={{ listStyleType: "none" }}>
+        <li onClick={() => {scrollToSection(partners.current);}} style={{ listStyleType: "none" }}>
           Partners
         </li>
       </ul>
       </div>
       <ul className={styles.social}>
         <li>
-          <img src={medium} alt="medium" />
-          <img src={telegram} alt="telegram" />
-          <img src={twitter} alt="twitter" />
-          <img src={mail} alt="mail" />
-          <img src={moonvector} alt="moonvector" />
+          <img onClick={(e) => {
+      e.preventDefault();
+      window.location.href=' https://medium.com/@team_46479';
+      }} src={medium} alt="medium" />
+          <img onClick={(e) => {
+      e.preventDefault();
+      window.location.href=' https://t.me/NebulaFinance';
+      }} src={telegram} alt="telegram" />
+          <img
+          onClick={(e) => {
+      e.preventDefault();
+      window.location.href=' https://twitter.com/nebulafinance__?s=21';
+      }} src={twitter} alt="twitter" />
+          <img onClick={(e) => {
+      e.preventDefault();
+      window.location.href='mailto:Team@nebulafinance.app ';
+      }} src={mail} alt="mail" />
+          <img onClick={(e) => {
+      e.preventDefault();
+      window.location.href=' https://nebulafinance.gitbook.io';
+      }} src={moonvector} alt="moonvector" />
         </li>
       </ul>
     </footer>
