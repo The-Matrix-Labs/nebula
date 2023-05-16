@@ -1,8 +1,11 @@
-import React from "react";
+import React , { Component }  from "react";
 import styles from "./NSH.module.css";
 import pie1 from "../../assets/images/pie1.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const NSH = () => (
+const NSH  = () => (
+  
   <div className={styles.container}>
     <p className={styles.title}>NSH -10 Billion</p>
     <div className={styles.row}>

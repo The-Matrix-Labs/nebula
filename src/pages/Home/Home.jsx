@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState , useEffect} from "react";
 import Modal from "react-modal";
 import ReactPlayer from "react-player";
 import Navbar from "../../components/Navbar/Navbar";
@@ -22,6 +22,8 @@ import partner2 from "../../assets/images/partner2.png";
 import Timeline from "../../components/Roadmap/Roadmap";
 import Footer from "../../components/Footer/Footer";
 import video from "../../assets/video/nebula.mp4";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = ({ home, about, token, road, team, partners }) => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -33,6 +35,9 @@ const Home = ({ home, about, token, road, team, partners }) => {
   const toggleReadMoreLess2 = () => {
     setIsShowMore2(!isShowMore2);
   };
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <>
       <Navbar
@@ -43,8 +48,8 @@ const Home = ({ home, about, token, road, team, partners }) => {
         team={team}
         partners={partners}
       />
-      <section className={styles.home}>
-        <div ref={home} className={styles.first}>
+      <section data-aos="fade-up" className={styles.home}>
+        <div  ref={home} className={styles.first}>
           <p>
             Nebula Finance{"\n"}
             <span className={styles.grad}>Hybrid Solutions:{"\n"}</span>
@@ -83,11 +88,11 @@ const Home = ({ home, about, token, road, team, partners }) => {
           </Modal>
         </div>
       </section>
-      <section className={styles.coins}>
+      <section data-aos="fade-up"  className={styles.coins}>
         <ReactPlayer width="100%" height="100%" url={video} controls={true} />
       </section>
-      <section ref={about} className={styles.about}>
-        <div className={styles.left}>
+      <section  ref={about} className={styles.about}>
+        <div data-aos="fade-right" className={styles.left}>
           <p className={styles.aboutHead}>
             <img className={styles.aboutLine} src={line} />
             About Us
@@ -119,7 +124,7 @@ const Home = ({ home, about, token, road, team, partners }) => {
             {isShowMore1 ? "Read Less" : "Read More"}
           </button>
         </div>
-        <div className={styles.right}>
+        <div data-aos="fade-left" className={styles.right}>
           <p className={styles.howHead}>
             How we work
             <img src={line} />
@@ -166,20 +171,20 @@ const Home = ({ home, about, token, road, team, partners }) => {
           </div>
         </div>
       </section>
-      <section className={styles.token}>
-        <div className={styles.nftTitle}>
+      <section  className={styles.token}>
+        <div data-aos="fade-up" className={styles.nftTitle}>
           <p>
             NFT collection - Nebluoids {"\n"}
             <img className={styles.hlineImage} src={hline} />
           </p>
         </div>
-        <div className={styles.nftProfiles}>
-          <NFTProfile src={NFT1} />
-          <NFTProfile src={NFT2} />
-          <NFTProfile src={NFT3} />
+        <div data-aos="fade-up" className={styles.nftProfiles}>
+          <NFTProfile data-aos="fade-right" src={NFT1} />
+          <NFTProfile data-aos="fade-up" src={NFT2} />
+          <NFTProfile data-aos="fade-left" src={NFT3} />
         </div>
         <div className={styles.nftfooter}>Minting coming soon</div>
-        <div ref={token} className={styles.nftTitle}>
+        <div data-aos="fade-up" ref={token} className={styles.nftTitle}>
           <p>
             Tokenomics {"\n"}
             <img className={styles.hlineImage} src={hline} />
@@ -188,14 +193,14 @@ const Home = ({ home, about, token, road, team, partners }) => {
         <NSH />
         <Distribution />
         <NFTInfo />
-        <div ref={road} className={styles.nftTitle}>
+        <div data-aos="fade-up" ref={road} className={styles.nftTitle}>
           <p>
             Roadmap 2023 {"\n"}
             <img className={styles.hlineImage} src={hline} />
           </p>
         </div>
         <Timeline />
-        <div ref={team} className={styles.nftTitle}>
+        <div data-aos="fade-up" ref={team} className={styles.nftTitle}>
           <p>
             Team {"\n"}
             <img className={styles.hlineImage} src={hline} />
@@ -224,7 +229,7 @@ const Home = ({ home, about, token, road, team, partners }) => {
             }
           />
         </div>
-        <div ref={partners} className={styles.nftTitle}>
+        <div data-aos="fade-up" ref={partners} className={styles.nftTitle}>
           <p>
             Partners {"\n"}
             <img className={styles.hlineImage} src={hline} />
