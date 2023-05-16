@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import styles from "./Navbar.module.css";
 import logo from "../../assets/images/logo.png";
-import { GiHamburgerMenu } from "react-icons/gi";
+import hamburger from '../../assets/images/hamburger.png'
 import { RxCross2 } from "react-icons/rx";
 import { Link, useNavigate } from "react-router-dom";
 import Tab from "../Tab/Tab";
@@ -90,7 +90,7 @@ const Navbar = ({ home, about, token, road, team, partners }) => {
         <ul>{navOptions}</ul>
 
         <ul id={styles.menu} onClick={() => setOpen((prev) => !prev)}>
-          {open ? <RxCross2 size={20} /> : <GiHamburgerMenu size={20} />}
+          {open ? <RxCross2 color="white" size={40} /> : <img src={hamburger}  />}
         </ul>
       </nav>
 

@@ -13,11 +13,11 @@
   max-width: min-content;
 }
 .name {
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 76px;
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 76px;
   /* identical to box height, or 317% */
 
   text-align: center;
@@ -26,11 +26,11 @@
 }
 
 .info {
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
   text-align: center;
 
   color: #ffffff;

@@ -30,13 +30,13 @@ const NSH = () => (
           11% Liquidity (165M)
         </p>
         <p className={styles.labelTitle}>
-          1.6% Team (160M, zero up front, paid per block) 0.8% Marketing(80M,
-          zero up front, paid per block) 8.5B Minted by Farming/Dex/Rebates
-          NUSD-TBD by Minting
+          1.6% Team (160M, zero up front, paid per block) {'\n'} 0.8% Marketing(80M,
+          zero up front, paid per block) {'\n'} 8.5B Minted by Farming/Dex/Rebates
+          {'\n'}NUSD-TBD by Minting
         </p>
       </div>
       <div className={styles.right}>
-        <img src={pie1} alt="" />
+        <img className={styles.image} src={pie1} alt="" />
       </div>
     </div>
   </div>

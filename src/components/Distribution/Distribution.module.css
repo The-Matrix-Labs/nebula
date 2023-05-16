@@ -104,3 +104,95 @@
   width: 5vh;
   float: left;
 }
+
+@media only screen and (max-width:700px){
+  .title {
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 900;
+font-size: 12px;
+line-height: 16px;
+    margin-left: 10%;
+    margin-top: 10%;
+    color: #ffffff;
+  }
+  
+  .labelTitle {
+    
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 900;
+font-size: 12px;
+line-height: 16px;
+  text-align: left;
+    color: #ffffff;
+  }
+  
+  .label {
+    margin-left: 10%;
+    margin-top: 10%;
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 900;
+font-size: 12px;
+line-height: 16px;
+    
+  
+    color: #ffffff;
+  }
+  
+  .row {
+    
+    display: flex;
+    flex-direction: column-reverse;
+    
+  }
+  
+  
+  .orange {
+    background: #ff9a3d;
+    border-radius: 2px;
+    height: 2.5vh;
+    width: 2.5vh;
+    float: left;
+  }
+  .yellow {
+    background: #ff7a00;
+    border-radius: 2px;
+    height: 2.5vh;
+    width: 2.5vh;
+    float: left;
+  }
+  .red {
+    background: #ff2e00;
+    border-radius: 2px;
+    height: 2.5vh;
+    width: 2.5vh;
+    float: left;
+  }
+  .pink {
+    background: #ff517b;
+    border-radius: 2px;
+    height: 2.5vh;
+    width: 2.5vh;
+    float: left;
+  }
+  .purple {
+    background: #d767ff;
+    border-radius: 2px;
+    height: 2.5vh;
+    width: 2.5vh;
+    float: left;
+  }
+  .blue {
+    background: #00a3ff;
+    border-radius: 2px;
+    height: 2.5vh;
+    width: 2.5vh;
+    float: left;
+  }
+  .image{
+    width: 193px;
+height: 193px;
+  }
+}

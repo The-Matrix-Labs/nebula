@@ -9,6 +9,20 @@
   white-space: pre-line;
 }
 
+@media only screen and (max-width: 700px) {
+  .home {
+    background-image: url("../../assets/images/home-wallpaper.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 12.5rem 0px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.5rem;
+    white-space: pre-line;
+  }
+  
+}
+
 .first {
   padding-top: 2.5%;
   font-family: "Nunito";
@@ -25,10 +39,7 @@
   font-weight: 800;
   font-size: 64px;
   line-height: 76px;
-  /* or 119% */
-
   text-transform: uppercase;
-
   background: linear-gradient(
     89.95deg,
     #ffc700 0.07%,
@@ -47,8 +58,6 @@
   font-weight: 800;
   font-size: 64px;
   line-height: 76px;
-  /* or 119% */
-
   text-transform: uppercase;
   color: white;
 }
@@ -59,8 +68,56 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 33px;
-
   color: #ffffff;
+}
+@media only screen and (max-width: 700px)
+{
+  .first {
+    padding-top: 40%;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.58);
+  }
+  .grad {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 34px;
+    text-transform: uppercase;
+    background: linear-gradient(
+      89.95deg,
+      #ffc700 0.07%,
+      #ff7a00 24.98%,
+      #ff2e00 47.05%,
+      #fe007a 68.11%,
+      #bd00ff 96.53%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .second {
+    font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+    font-size: 28px;
+    line-height: 34px;
+  text-transform: uppercase;
+  color: white;
+  }
+  .third{
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+color: #FFFFFF;
+  }
 }
 
 .btn1 {
@@ -117,6 +174,61 @@
   /* identical to box height */
   cursor: pointer;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 700px) {
+  .btn1{
+    background: linear-gradient(
+    89.95deg,
+    #ffc700 0.07%,
+    #ff7a00 24.98%,
+    #ff2e00 47.05%,
+    #fe007a 68.11%,
+    #bd00ff 96.53%
+  );
+  border-radius: 10px;
+  padding: 0.5% 2.5%;
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+width: 113px;
+height: 34px;
+/* identical to box height */
+  /* identical to box height */
+  cursor: pointer;
+  color: #ffffff;
+  }
+  .btn2{
+    border: 2px;
+  border-color: linear-gradient(
+    89.95deg,
+    #ffc700 0.07%,
+    #ff7a00 24.98%,
+    #ff2e00 47.05%,
+    #fe007a 68.11%,
+    #bd00ff 96.53%
+  );
+  border-radius: 10px;
+  width: 113px;
+height: 34px;
+  padding: 0.5% 2.5%;
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+  margin-left: 1%;
+  background: linear-gradient(
+    90.32deg,
+    #020202 0.37%,
+    rgba(2, 2, 2, 0.31) 99.82%
+  );
+  /* identical to box height */
+  cursor: pointer;
+  color: #ffffff;
+  }
 }
 
 .coins {
@@ -260,6 +372,113 @@
   margin-right: 5%;
 }
 
+@media only screen and (max-width: 700px){
+  .aboutHead {
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 76px;
+/* or 380% */
+
+color: #FFFFFF;
+  }
+  .aboutInfo {
+    font-family: "Nunito";
+    font-style: normal;
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+width: 100%;
+    margin: auto;
+    text-align: justify;
+    color: #ffffff;
+    padding-left: 1%;
+  }
+  .readMore {
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 19px;
+  
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .howHead {
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 76px;
+    /* or 190% */
+    color: #ffffff;
+  text-align: left;
+  }
+  .howRow {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%
+  }
+  .howreadMore {
+    cursor: pointer;
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 19px;
+  align-self: flex-start;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    padding-left: 1%;
+  }
+  .howbtn2 {
+    margin-top: 10% ;
+    display: flex;
+    width: 143px;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    padding: auto;
+height: 46px;
+    cursor: pointer;
+    border: 2px;
+    border-color: linear-gradient(
+      89.95deg,
+      #ffc700 0.07%,
+      #ff7a00 24.98%,
+      #ff2e00 47.05%,
+      #fe007a 68.11%,
+      #bd00ff 96.53%
+    );
+    border-radius: 27px;
+    padding: 0.5% 2.5%;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+  align-self: center;
+    color: #ffffff;
+  align-items: center;
+    background: rgba(255, 255, 255, 0.11);
+    align-content: center;
+  }
+}
+
 .token {
   background-image: url("../../assets/images/token-wallpaper.png");
   background-repeat: no-repeat;
@@ -308,6 +527,41 @@
   color: #ffffff;
 }
 
+@media only screen and (max-width: 700px){
+  .nftTitle {
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 76px;
+    /* or 190% */
+    text-align: center;
+    max-height: 40vh;
+    color: #ffffff;
+  }
+  
+  
+  .nftProfiles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nftfooter {
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 76px;
+    /* identical to box height, or 238% */
+  
+    text-align: center;
+  
+    color: #ffffff;
+  }
+}
+
 .teamProfiles {
   display: flex;
   flex-direction: row;
@@ -340,4 +594,39 @@
   display: flex;
   align-items: center;
   color: #020202;
+}
+
+@media only screen and (max-width: 700px) {
+  .teamProfiles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal {
+    width: 223px;
+    height: 288px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+  
+    background: #ffc700;
+    backdrop-filter: blur(10px);
+    /* Note: backdrop-filter has minimal browser support */
+  
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 40px;
+    /* or 119% */
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: #020202;
+  }
 }

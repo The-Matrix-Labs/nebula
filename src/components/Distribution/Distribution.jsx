@@ -6,7 +6,7 @@ const Distribution = () => (
   <div className={styles.container}>
     <div className={styles.row}>
       <div className={styles.left}>
-        <img src={pie2} alt="" />
+        <img className={styles.image} src={pie2} alt="" />
       </div>
       <div className={styles.right}>
         <p className={styles.label}>
