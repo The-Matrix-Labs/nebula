@@ -7,7 +7,7 @@ import Team3 from "../../assets/images/Team3.png";
 const TeamProfile = ({ src, name, info }) => (
   <div className={styles.container}>
     <img src={src} />
-    <p className={styles.name}>{name}</p>
+    <p className={styles.name}>{name}{'\n'}Founder</p>
     <p className={styles.info}>{info}</p>
   </div>
 );

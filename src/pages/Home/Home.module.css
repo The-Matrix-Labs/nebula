@@ -19,8 +19,9 @@
     flex-direction: column;
     padding-left: 2.5rem;
     white-space: pre-line;
-  }
+    max-width: 100%;
   
+}
 }
 
 .first {
@@ -521,7 +522,6 @@ line-height: 22px;
   font-size: 32px;
   line-height: 76px;
   /* identical to box height, or 238% */
-
   text-align: center;
 
   color: #ffffff;

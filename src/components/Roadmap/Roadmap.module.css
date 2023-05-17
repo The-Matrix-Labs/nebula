@@ -17,7 +17,7 @@
 .timelineitem {
   display: flex;
   justify-content: flex-end;
-  padding-right: 50px;
+  padding-right: 30px;
   position: relative;
   margin: 0px 0;
   width: 50%;
@@ -26,16 +26,15 @@
 .timelineitem:nth-child(odd) {
   align-self: flex-end;
   justify-content: flex-start;
-  padding-left: 50px;
+  padding-left: 25px;
   padding-right: 0;
 }
 .timelineitemcontent {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 35px;
+  padding: 25px;
   position: relative;
-  width: 400px;
   max-width: 70%;
   text-align: left;
 }
@@ -49,7 +48,7 @@
 
   letter-spacing: 0.04em;
 
-  color: rgba(255, 255, 255, 0.57);
+  color: #ffffff;
 }
 .title {
   font-family: "Nunito";
@@ -104,7 +103,7 @@
 @media only screen and (max-width: 767px) {
   .timeline-item-content,
   .timeline-item:nth-child(odd) .timeline-item-content {
-    padding: 15px 10px;
+    padding: 15px 20px;
     text-align: center;
     align-items: center;
   }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Footer.module.css";
 import logo from "../../assets/images/logo.png";
 import mail from "../../assets/images/media/mail.png";
@@ -6,6 +6,8 @@ import twitter from "../../assets/images/media/twitter.png";
 import moonvector from "../../assets/images/media/moonvector.png";
 import medium from "../../assets/images/media/meta.png";
 import telegram from "../../assets/images/media/telegram.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Footer = ({ home, about, token, road, team, partners }) => {
   const scrollToSection = (ref) => {
@@ -15,9 +17,12 @@ const Footer = ({ home, about, token, road, team, partners }) => {
       behavior: "smooth",
     });
   };
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <footer className={styles.footer}>
-      <ul>
+    <footer  className={styles.footer}>
+      <ul >
         <li>
           <img
             onClick={() => {
@@ -83,9 +88,10 @@ const Footer = ({ home, about, token, road, team, partners }) => {
           </li>
         </ul>
       </div>
-      <ul className={styles.social}>
-        <li>
+      <ul  className={styles.social}>
+        <li >
           <img
+          
             onClick={(e) => {
               e.preventDefault();
               window.open(

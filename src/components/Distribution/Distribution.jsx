@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Distribution.module.css";
 import pie2 from "../../assets/images/pie2.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const Distribution = () => (
-  <div className={styles.container}>
+const Distribution = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+  return (
+  <div data-aos="fade-up"  className={styles.container}>
     <div className={styles.row}>
-      <div className={styles.left}>
+      <div data-aos="fade-right" className={styles.left}>
         <img className={styles.image} src={pie2} alt="" />
       </div>
-      <div className={styles.right}>
+      <div data-aos="fade-left" className={styles.right}>
         <p className={styles.label}>
           <span className={styles.labelTitle}>Distribution</span>
           {"\n"}
@@ -37,6 +43,7 @@ const Distribution = () => (
       </div>
     </div>
   </div>
-);
+)
+  };
 
 export default Distribution;

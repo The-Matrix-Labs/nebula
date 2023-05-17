@@ -68,6 +68,7 @@
   }
 
   .navbar {
+    max-width: 100%;
     width: 90%;
     margin: auto;
     display: flex;
@@ -89,11 +90,16 @@
     color: var(--text-white);
     list-style: none;
     align-items: center;
-    z-index: 300;
+    z-index: 400;
     left: 35%;
     width: 80%;
     top: 15%;
-    background-color: var(--bg-500);
+    background: linear-gradient(
+      90.32deg,
+      #020202 0.37%,
+      rgba(2, 2, 2, 0.31) 99.82%
+    );
+    
     padding: 30px 0px;
     box-sizing: border-box;
     border-radius: 0px 10px 10px 0px;
@@ -106,7 +112,6 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 27px;
-
     color: #ffffff;
     cursor: pointer;
   }

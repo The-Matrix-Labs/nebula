@@ -88,8 +88,10 @@ const Home = ({ home, about, token, road, team, partners }) => {
           </Modal>
         </div>
       </section>
-      <section data-aos="fade-up"  className={styles.coins}>
-        <ReactPlayer width="100%" height="100%" url={video} controls={true} />
+      <section   className={styles.coins}>
+      <div data-aos="fade-up">
+        <ReactPlayer  width="100%" height="100%" url={video} controls={true} />
+        </div>
       </section>
       <section  ref={about} className={styles.about}>
         <div data-aos="fade-right" className={styles.left}>
@@ -100,11 +102,7 @@ const Home = ({ home, about, token, road, team, partners }) => {
           <p className={styles.aboutInfo}>
             Introducing Nebula Finance, a new hybrid stablecoin solution
             blending the advantages of both algorithmic and collateralized
-            stablecoin models. Utilizing a two-token system - Nebula Cash (NUSD)
-            as the stablecoin, and Nebula Shares (NSH) the Share token - our
-            protocol introduces dynamic fee distribution and tax allocations
-            that respond to market conditions, ensuring stability and enticing
-            user engagement.
+            stablecoin models. a two-token sytem- Nebula Cash (NUSD) as the stablecoin, and Nebula (NSH) the reward token- our protocol introduces dynamic fee.
           </p>
           {isShowMore1 && (
             <p className={styles.aboutInfo}>

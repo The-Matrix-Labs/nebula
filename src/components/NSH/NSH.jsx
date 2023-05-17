@@ -1,15 +1,18 @@
-import React , { Component }  from "react";
+import React , { useEffect }  from "react";
 import styles from "./NSH.module.css";
 import pie1 from "../../assets/images/pie1.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const NSH  = () => (
-  
+const NSH  = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+  return(
   <div className={styles.container}>
-    <p className={styles.title}>NSH -10 Billion</p>
+    <p data-aos="fade-up" className={styles.title}>NSH -10 Billion</p>
     <div className={styles.row}>
-      <div className={styles.left}>
+      <div data-aos="fade-right" className={styles.left}>
         <p className={styles.labelTitle}>
           1.5B Preminted (15%)
           {"\n"}
@@ -38,11 +41,12 @@ const NSH  = () => (
           {'\n'}NUSD-TBD by Minting
         </p>
       </div>
-      <div className={styles.right}>
+      <div data-aos="fade-left" className={styles.right}>
         <img className={styles.image} src={pie1} alt="" />
       </div>
     </div>
   </div>
-);
+  )
+          };
 
 export default NSH;
