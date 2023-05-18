@@ -44,7 +44,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  font-family: "Nunito";
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -72,14 +72,14 @@
     width: 90%;
     margin: auto;
     display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  left: 45%;
-  top: 5%;
-  transform: translate(-50%);
-  z-index: 100;
-  color: var(--text-white);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 45%;
+    top: 5%;
+    transform: translate(-50%);
+    z-index: 100;
+    color: var(--text-white);
   }
 
   div #drawerContainer {
@@ -94,12 +94,8 @@
     left: 35%;
     width: 80%;
     top: 15%;
-    background: linear-gradient(
-      90.32deg,
-      #020202 0.37%,
-      rgba(2, 2, 2, 0.31) 99.82%
-    );
-    
+    background: linear-gradient(90.32deg, #020202 0.37%, rgba(2, 2, 2, 0.31) 99.82%);
+
     padding: 30px 0px;
     box-sizing: border-box;
     border-radius: 0px 10px 10px 0px;
@@ -107,7 +103,7 @@
   }
 
   #drawerContainer > li {
-    font-family: "Nunito";
+    font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;

@@ -1,9 +1,5 @@
 .container {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.24) 0%,
-    rgba(255, 255, 255, 0.09) 100%
-  );
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.09) 100%);
   opacity: 0.8;
   backdrop-filter: blur(10px);
   /* Note: backdrop-filter has minimal browser support */
@@ -14,24 +10,19 @@
 }
 .name {
   font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 76px;
-  /* identical to box height, or 317% */
-
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
   text-align: center;
-
   color: #ffffff;
 }
 
 .info {
   font-family: 'Nunito';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 19px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
   text-align: center;
-
   color: #ffffff;
 }
