@@ -20,25 +20,25 @@ const Distribution = () => {
           {"\n"}
           {"\n"}
           <span className={styles.orange} />
-          27% NSH Liquidity
+          &nbsp;27% NSH Liquidity
           {"\n"}
           {"\n"}
           <span className={styles.yellow} />
-          15% NUSD Liquidity
+          &nbsp;15% NUSD Liquidity
           {"\n"}
           {"\n"}
           <span className={styles.red} />
-          18% Marketing
+          &nbsp;18% Marketing
           {"\n"}
           {"\n"}
-          <span className={styles.pink} /> 15% Collateral
+          <span className={styles.pink} /> &nbsp;15% Collateral
           {"\n"}
           {"\n"}
-          <span className={styles.blue} /> 5% Sale Platform Fees
+          <span className={styles.blue} /> &nbsp;5% Sale Platform Fees
           {"\n"}
           {"\n"}
           <span className={styles.purple} />
-          20% Stability reserve
+          &nbsp;20% Stability reserve
         </p>
       </div>
     </div>

@@ -18,22 +18,22 @@ const NSH  = () => {
           {"\n"}
           {"\n"}
           <span className={styles.orange} />
-          5% Private Sale (375M) Set Price
+          &nbsp;5% Private Sale (375M) Set Price
           {"\n"}
           {"\n"}
           <span className={styles.yellow} />
-          32% Public Sale(480M) Fair Launch
+          &nbsp;32% Public Sale(480M) Fair Launch
           {"\n"}
           {"\n"}
           <span className={styles.red} />
-          20% Protocl Stability(300M)*
+          &nbsp;20% Protocl Stability(300M)*
           {"\n"}
           {"\n"}
-          <span className={styles.pink} /> 12% Dex/Cex/Marketing (180M)
+          <span className={styles.pink} /> &nbsp;12% Dex/Cex/Marketing (180M)
           {"\n"}
           {"\n"}
           <span className={styles.purple} />
-          11% Liquidity (165M)
+          &nbsp;11% Liquidity (165M)
         </p>
         <p className={styles.labelTitle}>
           1.6% Team (160M, zero up front, paid per block) {'\n'} 0.8% Marketing(80M,

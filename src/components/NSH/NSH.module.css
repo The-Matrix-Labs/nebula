@@ -1,10 +1,6 @@
 .container {
   width: 80%;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.24) 0%,
-    rgba(255, 255, 255, 0.09) 100%
-  );
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.09) 100%);
   opacity: 0.8;
   backdrop-filter: blur(10px);
   border-radius: 22px;
@@ -12,7 +8,7 @@
 }
 
 .title {
-  font-family: "Nunito";
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
@@ -22,17 +18,22 @@
 }
 
 .labelTitle {
-  font-family: "Nunito";
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 33px;
-
   color: #ffffff;
+  margin: 10%;
+}
+
+.image{
+  width: 400px;
+  height: 400px;
 }
 
 .row {
-  margin-left: 7.5%;
+  margin-left: 5%;
   margin-right: 7.5;
   display: flex;
   flex-direction: row;
@@ -40,7 +41,7 @@
 }
 .right {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   padding-right: 2%;
   padding-bottom: 3%;
 }
@@ -86,31 +87,49 @@
   float: left;
 }
 
-@media only screen and (max-width:700px){
-  .title {
-    font-family: 'Nunito';
-font-style: normal;
-font-weight: 900;
-font-size: 16px;
-line-height: 22px;
-margin-top: 10%;
-    margin-left: 10%;
-    color: #ffffff;
-  }
-  
+@media only screen and (max-width: 900px) {
   .labelTitle {
     font-family: 'Nunito';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 16px;
-margin-left: 10%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 10%;
     color: #ffffff;
     text-align: left;
   }
-  
+
+  .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 10%;
+    margin-left: 10%;
+    color: #ffffff;
+  }
+
+  .labelTitle {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 10%;
+    color: #ffffff;
+    text-align: left;
+  }
+
   .row {
-    margin :auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,8 +137,7 @@ margin-left: 10%;
   }
   .right {
     display: flex;
-    align-items: flex-end;
-    
+    align-items: center;
   }
   .left {
     align-items: center;
@@ -161,10 +179,9 @@ margin-left: 10%;
     height: 2.5vh;
     width: 2.5vh;
     float: left;
-    
   }
-.image{
-  width: 197px;
-height: 197px;
-}
+  .image {
+    width: 197px;
+    height: 197px;
+  }
 }
