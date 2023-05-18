@@ -45,7 +45,6 @@
   font-size: 20px;
   line-height: 30px;
   /* or 150% */
-
   letter-spacing: 0.04em;
 
   color: #ffffff;
@@ -59,13 +58,19 @@
   /* or 150% */
   width: max-content;
   letter-spacing: 0.04em;
-
   color: #ffffff;
 }
 
 .timelineitem:nth-child(odd) .timelineitemcontent {
   text-align: left;
   align-items: flex-start;
+}
+
+.timelineitem:nth-child(odd) .title {
+  margin-left: 10px;
+}
+.timelineitem:nth-child(even) .title {
+  margin-right: 10px;
 }
 
 .timelineitem:nth-child(odd) .timelineitemcontent::after {

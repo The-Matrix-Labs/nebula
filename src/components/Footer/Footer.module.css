@@ -49,12 +49,14 @@
 }
 
 li:hover {
-  color: rgba(255, 255, 255, 0.57);
-  transition: 0.2s;
+  color: #2eaaf1;
+  transition: 0.2s ease-in color;
 }
+
 .social > li > img:hover {
   cursor: pointer;
   scale: 1.5;
+  transition: 0.3s ease;
 }
 
 .sections {

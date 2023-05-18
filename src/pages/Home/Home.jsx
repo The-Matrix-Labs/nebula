@@ -179,7 +179,7 @@ const Home = ({ home, about, token, road, team, partners }) => {
             <img className={styles.hlineImage} src={hline} />
           </p>
         </div>
-        <div className={styles.teamProfiles}>
+        <div className={`${styles.teamProfiles} ${styles.partners}`}>
           <img src={partner1} alt="" />
           <img src={partner2} alt="" />
         </div>
