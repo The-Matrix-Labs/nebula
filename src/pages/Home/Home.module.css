@@ -65,7 +65,6 @@
 }
 @media only screen and (max-width: 700px) {
   .first {
-    padding-top: 40%;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 500;
@@ -188,8 +187,14 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 10%;
+  padding: 10% 0px;
+  box-sizing: border-box;
   white-space: pre-line;
+}
+
+.player {
+  width: 80%;
+  margin: auto;
 }
 
 .about {
@@ -202,6 +207,7 @@
   margin: auto;
   padding: 10%;
   white-space: pre-line;
+  overflow: hidden;
 }
 
 .aboutHead {
@@ -262,7 +268,9 @@
   /* or 190% */
   color: #ffffff;
   align-self: center;
-  margin-left: 2%;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
 }
 .howRow {
   display: flex;
@@ -322,7 +330,6 @@
     font-size: 20px;
     line-height: 76px;
     /* or 380% */
-
     color: #ffffff;
   }
   .aboutInfo {
@@ -460,6 +467,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .nftfooter {
@@ -513,6 +521,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .modal {

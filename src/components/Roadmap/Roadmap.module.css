@@ -6,7 +6,7 @@
 }
 
 .timelinecontainer::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   bottom: 0;
@@ -39,7 +39,7 @@
   text-align: left;
 }
 .list {
-  font-family: "Nunito";
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -51,7 +51,7 @@
   color: #ffffff;
 }
 .title {
-  font-family: "Nunito";
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -74,14 +74,7 @@
 }
 
 .timelineitemcontent .circle {
-  background: linear-gradient(
-    89.95deg,
-    #ffc700 0.07%,
-    #ff7a00 24.98%,
-    #ff2e00 47.05%,
-    #fe007a 68.11%,
-    #bd00ff 96.53%
-  );
+  background: linear-gradient(89.95deg, #ffc700 0.07%, #ff7a00 24.98%, #ff2e00 47.05%, #fe007a 68.11%, #bd00ff 96.53%);
   border-radius: 50%;
   position: absolute;
   width: 51px;
@@ -106,5 +99,12 @@
     padding: 15px 20px;
     text-align: center;
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .list {
+    font-size: 13px;
+    line-height: 20px;
   }
 }

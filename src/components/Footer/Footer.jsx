@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "./Footer.module.css";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/footer-logo.png";
 import mail from "../../assets/images/media/mail.png";
 import twitter from "../../assets/images/media/twitter.png";
 import moonvector from "../../assets/images/media/moonvector.png";

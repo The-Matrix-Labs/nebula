@@ -71,7 +71,7 @@ const Home = ({ home, about, token, road, team, partners }) => {
         </div>
       </section>
       <section className={styles.coins}>
-        <div data-aos="fade-up">
+        <div data-aos="fade-up" className={styles.player}>
           <ReactPlayer width="100%" height="100%" url={video} controls={true} />
         </div>
       </section>
