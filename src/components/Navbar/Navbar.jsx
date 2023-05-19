@@ -74,25 +74,27 @@ const Navbar = ({ home, about, token, road, team, partners }) => {
 
   return (
     <>
-      <nav className={styles.navbar}>
-        <ul>
-          <li>
-            <img
-              onClick={() => {
-                scrollToSection(home.current);
-              }}
-              src={logo}
-              alt="logo"
-              className={styles.logo}
-            />
-          </li>
-        </ul>
-        <ul>{navOptions}</ul>
+      <div className={styles.container}>
+        <nav className={styles.navbar}>
+          <ul>
+            <li>
+              <img
+                onClick={() => {
+                  scrollToSection(home.current);
+                }}
+                src={logo}
+                alt="logo"
+                className={styles.logo}
+              />
+            </li>
+          </ul>
+          <ul>{navOptions}</ul>
 
-        <ul id={styles.menu} onClick={() => setOpen((prev) => !prev)}>
-          {open ? <RxCross2 color="white" size={40} /> : <img src={hamburger} />}
-        </ul>
-      </nav>
+          <ul id={styles.menu} onClick={() => setOpen((prev) => !prev)}>
+            {open ? <RxCross2 color="white" size={40} /> : <img src={hamburger} />}
+          </ul>
+        </nav>
+      </div>
 
       {open && (
         <div id={styles.drawerContainer} className={styles.hide}>
