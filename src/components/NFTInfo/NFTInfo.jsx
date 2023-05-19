@@ -12,19 +12,25 @@ const NFTInfo = () => {
       <div className={styles.row}>
         <div data-aos="fade-right" className={styles.left}>
           <p className={styles.title}>Remaining NSH- 8.5 Billion</p>
-          <ul>
+          <ul className={styles.nftInfoUl}>
             <li> Distributed Per Block as Farming rewards over 2-3 Years</li>
             <li>Minted as Rebates</li>
             <li>Minted as Bond Redemption</li>
           </ul>
         </div>
-        <div data-aos="fade-left" className={styles.right}>
+
+        <div data-aos="fade-right" className={styles.left}>
           <p className={styles.title}>NFTS</p>
-          <ul>
+          <ul className={styles.nftInfoUl}>
             <li>50 Nebuloids at 1 Eth - added to NUSD Liquidity</li>
           </ul>
+        </div>
+
+
+
+        <div data-aos="fade-left" className={styles.right}>
           <p className={styles.title}>NUSD Minting</p>
-          <ul>
+          <ul className={styles.nftInfoUl}>
             <li>Split Collateral and NUSD Liquidity</li>
           </ul>
         </div>

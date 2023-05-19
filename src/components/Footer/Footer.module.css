@@ -6,7 +6,8 @@
   padding: 1.5rem 6.125rem;
   font-style: normal;
   font-weight: 800;
-  font-size: 1.5rem;
+  font-size: 1.5rem !important;
+  margin-top: 50px !important;
   line-height: 2.063rem;
 }
 
@@ -16,12 +17,22 @@
   cursor: pointer;
 }
 
+.line_footer{
+  width: 100%;
+  display: none;
+}
+
 .footer > ul {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 0.625rem;
   padding: 0px;
+}
+
+
+.footer > ul > li > img{
+transition: all ease-in-out 0.3s;
 }
 
 .col {
@@ -35,28 +46,36 @@
 .social > li {
   display: flex;
   gap: 1.25rem;
+  margin-top: 30px;
+  transition: 0.2s ease-in-out color;
 }
 
-.social > li > img {
-  width: 1.25rem;
-  height: 1.25rem;
+.social > li > .icon_social {
+  width: 1.8rem;
+  height: 1.8rem;
   cursor: pointer;
 }
 
-.social > li > img:last-child {
-  width: 1.7rem;
-  height: 1.7rem;
+
+
+
+.icon_social{
+  color: #fff;
+
 }
 
-li:hover {
-  color: #2eaaf1;
-  transition: 0.2s ease-in color;
-}
-
-.social > li > img:hover {
+.social > li > .icon_social:hover {
   cursor: pointer;
   scale: 1.5;
-  transition: 0.3s ease;
+  transition: all ease-in-out .3s;
+  color: #2eaaf1;
+
+}
+
+
+.icon_social{
+  transition: all ease-in-out .3s;
+
 }
 
 .sections {
@@ -88,7 +107,26 @@ li:hover {
     height: 110px;
     cursor: pointer;
   }
-  .social > li > img:hover {
+  .social > li > .icon_social:hover {
     filter: hue-rotate(180deg);
   }
+
+  
+.line_footer{
+  width: 100%;
+  display: block;
+}
+
+.social > li > .icon_social {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.social > li > .icon_social:last-child {
+  width: 3.4rem;
+  height: 3.4rem;
+}
+
+
 }

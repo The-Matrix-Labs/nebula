@@ -8,6 +8,12 @@ import medium from "../../assets/images/media/meta.png";
 import telegram from "../../assets/images/media/telegram.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { FaTelegramPlane } from 'react-icons/fa';
+import { AiOutlineMedium } from 'react-icons/ai';
+import { AiOutlineTwitter } from 'react-icons/ai';
+import { AiOutlineMail } from 'react-icons/ai';
+import { SiGitbook } from 'react-icons/si';
+
 
 const Footer = ({ home, about, token, road, team, partners }) => {
   const scrollToSection = (ref) => {
@@ -22,6 +28,7 @@ const Footer = ({ home, about, token, road, team, partners }) => {
   }, []);
   return (
     <footer  className={styles.footer}>
+      <hr className={styles.line_footer}></hr>
       <ul >
         <li>
           <img
@@ -40,7 +47,7 @@ const Footer = ({ home, about, token, road, team, partners }) => {
             onClick={() => {
               scrollToSection(home.current);
             }}
-            style={{ listStyleType: "none" }}
+            style={{ listStyleType: "none", fontSize:"20px", lineHeight:'36px' }}
           >
             Home
           </li>
@@ -48,7 +55,7 @@ const Footer = ({ home, about, token, road, team, partners }) => {
             onClick={() => {
               scrollToSection(about.current);
             }}
-            style={{ listStyleType: "none" }}
+            style={{ listStyleType: "none", fontSize:"20px", lineHeight:'36px' }}
           >
             About Us
           </li>
@@ -56,7 +63,7 @@ const Footer = ({ home, about, token, road, team, partners }) => {
             onClick={() => {
               scrollToSection(token.current);
             }}
-            style={{ listStyleType: "none" }}
+            style={{ listStyleType: "none", fontSize:"20px", lineHeight:'36px' }}
           >
             Tokenomics
           </li>
@@ -66,12 +73,12 @@ const Footer = ({ home, about, token, road, team, partners }) => {
             onClick={() => {
               scrollToSection(road.current);
             }}
-            style={{ listStyleType: "none" }}
+            style={{ listStyleType: "none", fontSize:"20px", lineHeight:'36px' }}
           >
             Roadmaps
           </li>
           <li
-            style={{ listStyleType: "none" }}
+            style={{ listStyleType: "none", fontSize:"20px", lineHeight:'36px' }}
             onClick={() => {
               scrollToSection(team.current);
             }}
@@ -82,7 +89,7 @@ const Footer = ({ home, about, token, road, team, partners }) => {
             onClick={() => {
               scrollToSection(partners.current);
             }}
-            style={{ listStyleType: "none" }}
+            style={{ listStyleType: "none", fontSize:"20px", lineHeight:'36px' }}
           >
             Partners
           </li>
@@ -90,8 +97,9 @@ const Footer = ({ home, about, token, road, team, partners }) => {
       </div>
       <ul  className={styles.social}>
         <li >
-          <img
-          
+          <AiOutlineMedium
+            className={styles.icon_social}
+
             onClick={(e) => {
               e.preventDefault();
               window.open(
@@ -100,10 +108,11 @@ const Footer = ({ home, about, token, road, team, partners }) => {
                 "noopener,noreferrer"
               );
             }}
-            src={medium}
             alt="medium"
           />
-          <img
+          <FaTelegramPlane
+           className={styles.icon_social}
+
             onClick={(e) => {
               e.preventDefault();
               window.open(
@@ -112,10 +121,10 @@ const Footer = ({ home, about, token, road, team, partners }) => {
                 "noopener,noreferrer"
               );
             }}
-            src={telegram}
             alt="telegram"
           />
-          <img
+          <AiOutlineTwitter
+            className={styles.icon_social}
             onClick={(e) => {
               e.preventDefault();
               window.open(
@@ -124,18 +133,20 @@ const Footer = ({ home, about, token, road, team, partners }) => {
                 "noopener,noreferrer"
               );
             }}
-            src={twitter}
             alt="twitter"
           />
-          <img
+          <AiOutlineMail
+                      className={styles.icon_social}
+
             onClick={(e) => {
               e.preventDefault();
               window.location.href = "mailto:Team@nebulafinance.app ";
             }}
-            src={mail}
             alt="mail"
           />
-          <img
+          <SiGitbook
+            className={styles.icon_social}
+
             onClick={(e) => {
               e.preventDefault();
               window.open(
@@ -144,7 +155,6 @@ const Footer = ({ home, about, token, road, team, partners }) => {
                 "noopener,noreferrer"
               );
             }}
-            src={moonvector}
             alt="moonvector"
           />
         </li>

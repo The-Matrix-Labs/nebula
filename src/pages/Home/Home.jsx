@@ -75,6 +75,11 @@ const Home = ({ home, about, token, road, team, partners }) => {
           <ReactPlayer width="100%" height="100%" url={video} controls={true} />
         </div>
       </section>
+
+
+
+
+
       <section ref={about} className={styles.about}>
         <div data-aos="fade-right" className={styles.left}>
           <p className={styles.aboutHead}>
@@ -127,7 +132,7 @@ const Home = ({ home, about, token, road, team, partners }) => {
       </section>
       <section className={styles.token}>
         <div data-aos="fade-up" className={styles.nftTitle}>
-          <p>
+          <p className={styles.headingP}> 
             NFT collection - Nebluoids {'\n'}
             <img className={styles.hlineImage} src={hline} />
           </p>
@@ -139,7 +144,7 @@ const Home = ({ home, about, token, road, team, partners }) => {
         </div>
         <div className={styles.nftfooter}>Minting coming soon</div>
         <div data-aos="fade-up" ref={token} className={styles.nftTitle}>
-          <p>
+          <p className={styles.headingP}>
             Tokenomics {'\n'}
             <img className={styles.hlineImage} src={hline} />
           </p>
@@ -148,7 +153,7 @@ const Home = ({ home, about, token, road, team, partners }) => {
         <Distribution />
         <NFTInfo />
         <div data-aos="fade-up" ref={road} className={styles.nftTitle}>
-          <p>
+          <p className={styles.headingP}>
             Roadmap 2023 {'\n'}
             <img className={styles.hlineImage} src={hline} />
           </p>
@@ -157,7 +162,7 @@ const Home = ({ home, about, token, road, team, partners }) => {
       <section className={styles.roadmap}>
         <Timeline />
         <div data-aos="fade-up" ref={team} className={styles.nftTitle}>
-          <p>
+          <p className={styles.headingP}>
             Team {'\n'}
             <img className={styles.hlineImage} src={hline} />
           </p>
@@ -174,7 +179,7 @@ const Home = ({ home, about, token, road, team, partners }) => {
           />
         </div>
         <div data-aos="fade-up" ref={partners} className={styles.nftTitle}>
-          <p>
+          <p className={styles.headingP}>
             Partners {'\n'}
             <img className={styles.hlineImage} src={hline} />
           </p>
