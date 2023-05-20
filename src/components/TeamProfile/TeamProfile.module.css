@@ -5,9 +5,10 @@
   /* Note: backdrop-filter has minimal browser support */
   margin: 2%;
   border-radius: 22px;
-  padding: 2% 1%;
+  padding: 1% 1%;
   max-width: min-content;
 }
+
 .name {
   font-family: 'Nunito';
   font-style: normal;
@@ -26,4 +27,16 @@
   text-align: center;
   padding: 0 20px;
   color: #ffffff;
+}
+
+@media (max-width: 500px) {
+  .container > img {
+    border-radius: 22px;
+    width: 100%;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 2% 2%;
+  }
 }

@@ -17,9 +17,9 @@
   cursor: pointer;
 }
 
-.line_footer{
+.line_footer {
   width: 100%;
-  display: none;
+  display: none !important;
 }
 
 .footer > ul {
@@ -30,9 +30,8 @@
   padding: 0px;
 }
 
-
-.footer > ul > li > img{
-transition: all ease-in-out 0.3s;
+.footer > ul > li > img {
+  transition: all ease-in-out 0.3s;
 }
 
 .col {
@@ -56,26 +55,19 @@ transition: all ease-in-out 0.3s;
   cursor: pointer;
 }
 
-
-
-
-.icon_social{
+.icon_social {
   color: #fff;
-
 }
 
 .social > li > .icon_social:hover {
   cursor: pointer;
   scale: 1.5;
-  transition: all ease-in-out .3s;
+  transition: all ease-in-out 0.3s;
   color: #2eaaf1;
-
 }
 
-
-.icon_social{
-  transition: all ease-in-out .3s;
-
+.icon_social, .col > li {
+  transition: all ease-in-out 0.3s;
 }
 
 .sections {
@@ -87,6 +79,10 @@ transition: all ease-in-out 0.3s;
 
 .sections > .col:nth-child(1) {
   padding: 0px;
+}
+
+.col > li:hover {
+  color: #2eaaf1;
 }
 
 @media only screen and (max-width: 700px) {
@@ -111,22 +107,19 @@ transition: all ease-in-out 0.3s;
     filter: hue-rotate(180deg);
   }
 
-  
-.line_footer{
-  width: 100%;
-  display: block;
-}
+  .line_footer {
+    width: 100%;
+    display: block;
+  }
 
-.social > li > .icon_social {
-  width: 3rem;
-  height: 3rem;
-  cursor: pointer;
-}
+  .social > li > .icon_social {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+  }
 
-.social > li > .icon_social:last-child {
-  width: 3.4rem;
-  height: 3.4rem;
-}
-
-
+  .social > li > .icon_social:last-child {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
 }

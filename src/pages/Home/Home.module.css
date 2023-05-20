@@ -11,6 +11,11 @@
 
 .partners {
   margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 700px) {
@@ -222,12 +227,13 @@
   line-height: 76px;
   /* or 190% */
   color: #ffffff;
+  display: flex;
+  align-items: center;
 }
 
 .aboutLine {
   margin-right: 1%;
 }
-
 
 .aboutInfo {
   font-family: 'Nunito';
@@ -276,7 +282,7 @@
   /* or 190% */
   color: #ffffff;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 10px;
 }
 .howRow {
@@ -378,8 +384,8 @@
     /* or 190% */
     color: #ffffff;
     text-align: left;
-    display: flex;
     flex-direction: row-reverse;
+    gap: 5px;
   }
   .howRow {
     display: flex;
@@ -469,8 +475,8 @@
   /* padding-bottom: 100px; */
 }
 
-.headingP{
-line-height: 30px;
+.headingP {
+  line-height: 30px;
 }
 
 .nftProfiles {
@@ -530,10 +536,11 @@ line-height: 30px;
 .teamProfiles {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
-  gap:50px;
+  /* gap:50px; */
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .modal {

@@ -1,13 +1,16 @@
 .container {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.24) 0%,
-    rgba(255, 255, 255, 0.09) 100%
-  );
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.09) 100%);
   opacity: 0.8;
   backdrop-filter: blur(10px);
   /* Note: backdrop-filter has minimal browser support */
   margin: 2%;
   border-radius: 22px;
-  padding: 2% 1%;
+  padding: 2% 2%;
+}
+
+@media (max-width: 500px) {
+  .container > img {
+    width: 100%;
+    border-radius: 22px;
+  }
 }

@@ -13,7 +13,7 @@
   font-weight: 900;
   font-size: 32px;
   line-height: 44px;
-  margin-left: 7.5%;
+  margin-left: 5%;
   margin-bottom: 0px;
   color: #ffffff;
 }
@@ -26,6 +26,7 @@
   line-height: 33px;
   color: #ffffff;
   margin: 10%;
+  margin-left: 0;
 }
 
 .image{
@@ -117,7 +118,7 @@
     font-size: 16px;
     line-height: 22px;
     margin-top: 10%;
-    margin-left: 10%;
+    margin-left:10%;
     color: #ffffff;
   }
 
@@ -142,6 +143,7 @@
   .right {
     display: flex;
     align-items: center;
+    width: 100%;
   }
   .left {
     align-items: center;
