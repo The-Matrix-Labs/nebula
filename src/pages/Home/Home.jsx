@@ -24,6 +24,7 @@ import Footer from '../../components/Footer/Footer';
 import video from '../../assets/video/nebula.mp4';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { AiFillCaretDown, AiFillCaretUp } from 'react-icons/ai';
 
 const Home = ({ home, about, token, road, team, partners }) => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -76,10 +77,6 @@ const Home = ({ home, about, token, road, team, partners }) => {
         </div>
       </section>
 
-
-
-
-
       <section ref={about} className={styles.about}>
         <div data-aos="fade-right" className={styles.left}>
           <p className={styles.aboutHead}>
@@ -100,6 +97,7 @@ const Home = ({ home, about, token, road, team, partners }) => {
           )}
           <button onClick={toggleReadMoreLess1} className={styles.readMore}>
             {isShowMore1 ? 'Read Less' : 'Read More'}
+            {isShowMore1 ? <AiFillCaretUp /> : <AiFillCaretDown />}
           </button>
         </div>
         <div data-aos="fade-left" className={styles.right}>
@@ -126,13 +124,14 @@ const Home = ({ home, about, token, road, team, partners }) => {
             </a>
             <button onClick={toggleReadMoreLess2} className={styles.howreadMore}>
               {isShowMore2 ? 'Read Less' : 'Read More'}
+              {isShowMore2 ? <AiFillCaretUp /> : <AiFillCaretDown />}
             </button>
           </div>
         </div>
       </section>
       <section className={styles.token}>
         <div data-aos="fade-up" className={styles.nftTitle}>
-          <p className={styles.headingP}> 
+          <p className={styles.headingP}>
             NFT collection - Nebluoids {'\n'}
             <img className={styles.hlineImage} src={hline} />
           </p>

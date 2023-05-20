@@ -260,9 +260,12 @@
   border: none;
   padding: 0;
   cursor: pointer;
-  background: linear-gradient(89.95deg, #ffc700 0.07%, #ff7a00 24.98%, #ff2e00 47.05%, #fe007a 68.11%, #bd00ff 96.53%);
   border-radius: 20px;
   padding: 0.5% 2.5%;
+  background: rgba(116, 114, 114, 0.57);
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .readMore:hover {
   color: rgba(255, 255, 255, 0.57);
@@ -323,13 +326,17 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 33px;
-
+  background: rgba(116, 114, 114, 0.57);
   color: #ffffff;
-  background-color: transparent;
   border: none;
   padding: 0;
   align-content: flex-end;
   margin-right: 5%;
+    border-radius: 20px;
+  padding: 0.5% 2.5%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -403,7 +410,8 @@
     color: #ffffff;
     background-color: transparent;
     border: none;
-    padding-left: 1%;
+    /* padding-left: 1%; */
+    padding: 5px 20px;
   }
   .howbtn2 {
     margin-top: 10%;
